@@ -37,7 +37,7 @@ public class RegistryFabric {
         return Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, new ResourceLocation(Constants.MOD_ID, objectID), objectSupplier.get());
     }
 
-    public static <T extends BlockEntityType<?>> T registerBlockEntityType(String objectID, Supplier<T> objectSupplier) {
+    protected static <T extends BlockEntityType<?>> T registerBlockEntityType(String objectID, Supplier<T> objectSupplier) {
         return Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, new ResourceLocation(Constants.MOD_ID, objectID), objectSupplier.get());
     }
 

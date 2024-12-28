@@ -58,7 +58,7 @@ public class RegistryForge {
         return TABS.register(objectID, objectSupplier);
     }
 
-    public static <T extends BlockEntityType<?>> RegistryObject<T> registerBlockEntityType(String objectID, Supplier<T> objectSupplier) {
+    protected static <T extends BlockEntityType<?>> RegistryObject<T> registerBlockEntityType(String objectID, Supplier<T> objectSupplier) {
         return BLOCK_ENTITY_TYPES.register(objectID, objectSupplier);
     }
 
